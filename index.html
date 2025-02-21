@@ -1,812 +1,303 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayşe Dilek - Personal Web Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(to right, #4a90e2, #1457a7);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .bg-light-blue {
+            background-color: #e3f2fd;
+        }
+        .bg-dark-blue {
+            background-color: #1565c0;
+            color: white;
+        }
+        h2 {
+            border-bottom: 3px solid #4a90e2;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+                .skills-category {
+            margin-bottom: 1.5rem;
+        }
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        .skill-box {
+            display: inline-block;
+            background-color: #e0f7fa;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #00796b;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-    <title>aysedilek</title>
+        .skills-category h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+         .text-white {
+        color: #ffffff;
+        text-decoration: none;
+        }
 
+        .text-white:hover {
+            text-decoration: underline;
+        }
 
-   
-
-    <!-- Bootstrap -->
-    <link href="template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Custom Fonts -->
-    
-    <link href="template/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Theme CSS -->
-    <link href="template/css/agency.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+        .fa {
+            margin-right: 8px;
+        }
+    </style>
 </head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Ayşe Dilek</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Personal Informatıon</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Skılls</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Experiences</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Projects and Courses</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+            <a class="navbar-brand" href="#">Ayşe Dilek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experineces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
-    <header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To My Website!</div>
-                <div class="intro-heading">It's Nıce To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Personal Informatıon</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                    <div style="padding: 8px; text-align: left;" class="container">
-                      <table class="table table-hover section-subheading text-muted">
-                        <tbody>
-                          <tr>
-                            <td>Name&Surname :</td>
-                            <td>Ayşe Dilek</td>
-                          </tr>
-                          <tr>
-                            <td>Nationality :</td>
-                            <td>Republic of Turkey</td>
-                          </tr>
-                          <tr>
-                            <td>City :</td>
-                            <td>Ankara</td>
-                          </tr>
-                          <tr>
-                            <td>Birth Date :</td>
-                            <td>1993/01/29</td>
-                          </tr>
-                          <tr>
-                            <td>Languages :</td>
-                            <td>Turkish - English</td>
-                          </tr>
-                          <tr>
-                            <td>Job :</td>
-                            <td>Senior Software Developer</td>
-                          </tr>
-                          <tr>
-                            <td>Graduated School :</td>
-                            <td>Muğla Sıtkı Koçman University</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-2">
-                    <a href="https://www.facebook.com/ayse.dilek.1253"><i class="fa fa-facebook"></i></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="https://twitter.com/aysedlk"><i class="fa fa-twitter"></i></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="https://github.com/aysedilekk"><i class="fa fa-github"></i></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="https://www.linkedin.com/in/ay%C5%9Fe-dilek-33b6b2108/"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="https://www.instagram.com/aysedlk06/"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Skılls</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>P. Language</h4>
-                        <p class="text-muted">Python</p>
-                        <p class="text-muted">TypeScript</p>
-                        <p class="text-muted">HTML/CSS</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Frameworks</h4>
-                        <p class="text-muted">Django</p>
-                        <p class="text-muted">Flask</p>
-                        <p class="text-muted">Java (Swing)</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Databases</h4>
-                        <p class="text-muted">MySQL</p>
-                        <p class="text-muted">MongoDB</p>
-                        <p class="text-muted">Postgresql</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>AWS</h4>
-                        <p class="text-muted">EC2</p>
-                        <p class="text-muted">RDS</p>
-                        <p class="text-muted">S3</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Operating System</h4>
-                        <p class="text-muted">Linux</p>
-                        <p class="text-muted">Windows</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Queue Management</h4>
-                        <p class="text-muted">RabbitMQ</p>
-                        <p class="text-muted">Kafka</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>DevOps</h4>
-                        <p class="text-muted">Docker</p>
-                        <p class="text-muted">CI/CD</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Versioning Control</h4>
-                        <p class="text-muted">Git</p>
-                        <p class="text-muted">Gitlab</p>
-                    </div>
-                </div>
-            </div>
+            <h1>Hello, I am Ayşe Dilek</h1>
+            <p>Expert Software Developer | Full Stack Developer</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Experıences</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="template/img/about/1.png" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>OBSS</h4>
-                                    <h4 class="subheading">Senior Software Developer</h4>
-                                    <h5 class="subheading">Backend Developer</h5>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">21/11/2022– 16/08/2023</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Radıus</h4>
-                                    <h4 class="subheading">Software Developer</h4>
-                                    <h5 class="subheading">Fullstack Developer</h5>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">23/11/2020– 11/11/2022</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>TURK AI</h4>
-                                    <h4 class="subheading">Software Developer</h4>
-                                    <h5 class="subheading">Backend Developer</h5>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">24/02/2020–21/08/2020</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>SPP42</h4>
-                                    <h4 class="subheading">Software Developer</h4>
-                                    <h5 class="subheading">Backend Developer</h5>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">14/01/2019–07/02/2020</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Güven Future</h4>
-                                    <h4 class="subheading">Software Developer</h4>
-                                    <h5 class="subheading">Frontend Developer</h5>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">16/10/2017–07/01/2019</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>TAI - TUSAŞ</h4>
-                                    <h4 class="subheading">Computer Engineering, Intern</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">13/06/2016–15/07/2016</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>IQ System Solutions</h4>
-                                    <h4 class="subheading">Computer Engineering, Intern</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">01/07/2015–17/08/2015</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <h2>About Me</h2>
+            <p>
+                Senior Software Developer specializing in back-end and front-end development, mainly focusing on engineering for the web and open source. <br>
+                Experienced with all stages of the development cycle for dynamic web and all projects. Well-versed in numerous programming languages <br>
+                including Python, Django, Flask, FastAPI, Angular, React, and Java. <br><br>
+                
+                I have been working as a software developer for 8 years.Currently, I am pursuing a Master's degree in Computer Engineering at Çankaya University. <br><br>
+
+                In my professional career, I primarily provide platform support for AI projects.
+                Through my Master's program, I enhance my work with AI-related courses,
+                striving for both professional and academic growth in the field of artificial intelligence.
+            </p>
         </div>
     </section>
 
-    <!-- Team Section -->
-<!--    <section id="portfolio" class="bg-light-gray">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-12 text-center">-->
-<!--                    <h2 class="section-heading">Projects and Courses</h2>-->
-<!--                    <h3 class="section-subheading text-muted">Projects</h3>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content"> -->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <h4>NLP Speech Recognition Project</h4>-->
-<!--                        <p class="text-muted">Search and Watch</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <h4>Java Swing Designer Project</h4>-->
-<!--                        <p class="text-muted">Electronical Menu</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <h4>Information Retrieval Project</h4>-->
-<!--                        <p class="text-muted">Search Story</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <h4>Database Project</h4><br>-->
-<!--                        <p class="text-muted">Olimpic Games</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-12 text-center">-->
-<!--                    <h3 class="section-subheading text-muted">Courses</h3>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content"> -->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">Object Oriented Programming</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">NLP (Natural Language Processing)</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">Web Development and Programming</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">Computer Network and Network Security</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content"> -->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">Database</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">Dynamic Web Programming</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">Software Engineering</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-3 col-sm-6 portfolio-item">-->
-<!--                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">-->
-<!--                        <div class="portfolio-hover">-->
-<!--                            <div class="portfolio-hover-content">-->
-<!--                                <i class="fa fa-plus fa-3x"></i>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                    <div class="portfolio-caption">-->
-<!--                        <p class="text-muted">Applied Machine Learning</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+    <!-- Education Section -->
+    <section id="education" class="section bg-light-blue">
+        <div class="container">
+            <h2>Education</h2>
+            <p>2024-2026: Master of Science - MS, Computer Engineering - Çankaya University</p>
+            <p>2013-2017: Bachelor's Degree - Computer Engineering - Muğla Sıtkı Koçman University (3.04 / 4.00)</p>
+            <p>2012-2013: English Preparatory School - Muğla Sıtkı Koçman University</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Deneyim</h2>
+            
+            <p>2024 - Present: Expert Software Developer - Proven Technologies, Ankara (Turkey)</p>
+            <ul>
+                <li>Fullstack Development</li>
+                <li>Backend Development: Python (Django, Flask), Java Spring</li>
+                <li>Frontend Development: React, Angular</li>
+                <li>PostgreSQL</li>
+                <li>WebSocket</li>
+                <li>MQTT</li>
+                <li>Redis</li>
+                <li>AWS</li>
+                <li>RabbitMQ</li>
+            </ul>
+
+            <p>2022-2023: Manager | Senior Software Developer - OBSS, Remote</p>
+            <ul>
+                <li>Lumnion – Client Server and AWS Conversion</li>
+                <li>Python Backend Development (Flask)</li>
+                <li>Docker Experience</li>
+                <li>MongoDB</li>
+                <li>RabbitMQ</li>
+                <li>Redis</li>
+            </ul>
+
+            <p>2020-2022: Software Developer - Radius, Ankara (Turkey)</p>
+            <ul>
+                <li>Python Backend Development (Django, Flask)</li>
+                <li>Python microservices</li>
+                <li>Angular Frontend Development</li>
+                <li>AWS for all deployment processes, databases (EC2, RDS, Route53, S3)</li>
+                <li>Docker Experience</li>
+                <li>Rest API</li>
+                <li>PostgreSQL and MySQL databases</li>
+            </ul>
+
+            <p>2020: Software Developer - TURK AI, Ankara (Turkey)</p>
+            <ul>
+                <li>Python Backend Development</li>
+                <li>Microservices</li>
+                <li>Rest API</li>
+                <li>Workers</li>
+                <li>RabbitMQ, Minio, Postgres</li>
+                <li>Multithreading</li>
+            </ul>
+
+            <p>2019: Software Developer - SPP42, Ankara (Turkey)</p>
+            <ul>
+                <li>Flask Web Applications</li>
+                <li>Microservices</li>
+                <li>Rest API</li>
+            </ul>
+
+            <p>2017-2019: Software Developer - Güven Future, Ankara (Turkey)</p>
+            <ul>
+                <li>Digital Signage Application</li>
+                <li>Admin Interface: Frontend: Angular5, HTML5, CSS3</li>
+                <li>Web Applications: Python</li>
+                <li>Healthcare Platform: Frontend: Angular5, JQuery, HTML5, CSS3</li>
+            </ul>
+
+            <p>2016: Computer Engineering Intern - TAI, Ankara (Turkey)</p>
+            <ul>
+                <li>Network training (CCNA)</li>
+                <li>Interface design using Java Swing</li>
+            </ul>
+
+            <p>2015: Computer Engineering Intern - IQ System Solutions, Ankara (Turkey)</p>
+            <ul>
+                <li>Website creation using WordPress</li>
+                <li>Hardware</li>
+                <li>System setup</li>
+            </ul>
+
+            <p>2014: Web Designer - Arassoft Bilişim, Ankara (Turkey)</p>
+            <ul>
+                <li>Creating website templates</li>
+                <li>Website design</li>
+                <li>Data editing</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light-blue">
+        <div class="container">
+            <h2>Skills</h2>
+            
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-box">Python</div>
+                <div class="skill-box">Java</div>
+                <div class="skill-box">JavaScript</div>
+                <div class="skill-box">TypeScript</div>
+                <div class="skill-box">R (Beginning)</div>
+                <div class="skill-box">PHP (Beginning)</div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Frameworks</h3>
+                <div class="skill-box">Django</div>
+                <div class="skill-box">Flask</div>
+                <div class="skill-box">FastAPI</div>
+                <div class="skill-box">Spring</div>
+                <div class="skill-box">Angular</div>
+                <div class="skill-box">React</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Databases</h3>
+                <div class="skill-box">MongoDB</div>
+                <div class="skill-box">PostgreSQL</div>
+                <div class="skill-box">MySQL</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Network</h3>
+                <div class="skill-box">Basic Cisco Training</div>
+            </div>
+
+
+            <div class="skills-category">
+                <h3>Web Development</h3>
+                <div class="skill-box">Django</div>
+                <div class="skill-box">Flask</div>
+                <div class="skill-box">Spring</div>
+                <div class="skill-box">TypeScript (Angular, React)</div>
+                <div class="skill-box">Laravel (Beginning)</div>
+                <div class="skill-box">HTML5</div>
+                <div class="skill-box">CSS3</div>
+                <div class="skill-box">Bootstrap</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Softwares and Systems</h3>
+                <div class="skill-box">Linux</div>
+                <div class="skill-box">Git</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Technologies</h3>
+                <div class="skill-box">WebSocket</div>
+                <div class="skill-box">Redis</div>
+                <div class="skill-box">MQTT</div>
+                <div class="skill-box">RabbitMQ</div>
+                <div class="skill-box">Kafka</div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Tools</h3>
+                <div class="skill-box">Jira</div>
+                <div class="skill-box">Photoshop</div>
+                <div class="skill-box">AWS</div>
+                <div class="skill-box">Asana</div>
+                <div class="skill-box">Zeplin</div>
+                <div class="skill-box">Retool</div>
+                <div class="skill-box">Figma</div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section bg-dark-blue">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact</h2>
-                </div>
-            </div>
-             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h4 class="section-heading">Ayşe Dilek</h4>
-                    <h4 class="section-heading" style="text-transform: lowercase;">aysedilek06@gmail.com</h4>
-                    <h4 class="section-heading" style="text-transform: lowercase;">aysedilekk@yahoo.com</h4>
-                </div>
-            </div>
+            <h2>İletişim</h2>
+            <p><a href="mailto:aysedilek06@gmail.com" class="text-white"><i class="fa fa-envelope"></i> aysedilek06@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/ay%C5%9Fe-dilek-33b6b2108/" class="text-white" target="_blank"><i class="fab fa-linkedin me-2"></i>My Linkedin Profile</a></p>
+            <p><a href="https://github.com/aysedilekk" class="text-white" target="_blank"><i class="fab fa-github me-1"></i> My Github Profile</a></p>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">aysedilek - 2023</span>
-                </div>
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                    <span class="copyright">All right reserved.</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
-
 </html>
